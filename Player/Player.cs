@@ -26,6 +26,7 @@ namespace GoladBot.Player
     {
         public string Name { get; private set; }
         public int LivingCells { get; set; }
+        public string previousMove { get; set; }
 
         public Player(string playerName)
         {

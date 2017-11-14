@@ -71,7 +71,7 @@ namespace GoladBot.Bot
 
             if (deadCells.Count <= 0 || myCells.Count < 2)
             {
-                DoRandomKillMove(state, cellMap);
+                return DoRandomKillMove(state, cellMap);
             }
 
             Point randomBirth = deadCells[Random.Next(deadCells.Count)];

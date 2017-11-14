@@ -174,6 +174,9 @@ namespace GoladBot.Bot
                     case "living_cells":
                         player.LivingCells = int.Parse(value);
                         break;
+                    case "move":
+                        player.previousMove = value;
+                        break;
                     default:
                         Console.Error.WriteLine(
                             $"Cannot parse {playerName} data input with key '{key}'");
